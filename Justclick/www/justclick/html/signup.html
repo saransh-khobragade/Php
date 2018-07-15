@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/justclick.css">
+<script>
+function home()
+{document.location.href="/";}
+function goBack()
+  {
+  window.history.back()
+}
+</script>
+</head>
+
+<body id="body">
+<div id="mndiv">
+<div id="buttons" style="position: absolute; left: 327px; top: 9px; z-index: 5">
+<input type="image" src="../images/back.jpg" style="height:50px; width:50px" onClick="goBack();" value="back"/>
+<input type="image" src="../images/home.jpg" style="height:50px; width:50px" onClick="home();"/>
+</div>
+<form method="get" action="../php/signup.php" name="f1">
+<h1>Sign up</h1>
+<table width="50%" align="center">
+<tr>
+<tr>
+<td>Username</td>
+<td><input type="text" name="user"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="text" name="pass" /></td>
+</tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="text" name="con_pass" /></td>
+</tr>
+<tr>
+<td><input type="submit" value="create">
+</tr>
+</table>
+</form>
+</div>
+
+</body>
+
+</html>
